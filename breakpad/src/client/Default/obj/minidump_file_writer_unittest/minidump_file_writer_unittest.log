@@ -1,0 +1,23 @@
+﻿Build started 11/17/2013 11:41:12 PM.
+     1>Project "E:\Opensource\Mozilla\Bug\5\Breakpad\breakpad\src\client\minidump_file_writer_unittest.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Default\obj\minidump_file_writer_unittest\minidump_file_writer_unittest.unsuccessfulbuild".
+       ClCompile:
+         E:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.. /Zi /nologo /W1 /WX- /O2 /Oy- /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Default\obj\minidump_file_writer_unittest\\" /Fd"Default\obj\minidump_file_writer_unittest\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt minidump_file_writer_unittest.cc minidump_file_writer.cc ..\common\string_conversion.cc
+         minidump_file_writer_unittest.cc
+         minidump_file_writer.cc
+         string_conversion.cc
+         Generating Code...
+       Link:
+         E:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Opensource\Mozilla\Bug\5\Breakpad\breakpad\src\client\Default\minidump_file_writer_unittest.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Default\obj\minidump_file_writer_unittest\minidump_file_writer_unittest.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"E:\Opensource\Mozilla\Bug\5\Breakpad\breakpad\src\client\Default\minidump_file_writer_unittest.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Opensource\Mozilla\Bug\5\Breakpad\breakpad\src\client\Default\minidump_file_writer_unittest.lib" /MACHINE:X86 Default\obj\minidump_file_writer_unittest\minidump_file_writer_unittest.obj
+         Default\obj\minidump_file_writer_unittest\minidump_file_writer.obj
+         Default\obj\minidump_file_writer_unittest\string_conversion.obj
+     1>string_conversion.obj : error LNK2019: unresolved external symbol _ConvertUTF8toUTF16 referenced in function "int __cdecl google_breakpad::UTF8ToUTF16Char(char const *,int,unsigned short * const)" (?UTF8ToUTF16Char@google_breakpad@@YAHPBDHQAG@Z)
+     1>string_conversion.obj : error LNK2019: unresolved external symbol _ConvertUTF32toUTF16 referenced in function "void __cdecl google_breakpad::UTF32ToUTF16Char(wchar_t,unsigned short * const)" (?UTF32ToUTF16Char@google_breakpad@@YAX_WQAG@Z)
+     1>string_conversion.obj : error LNK2019: unresolved external symbol _ConvertUTF16toUTF8 referenced in function "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl google_breakpad::UTF16ToUTF8(class std::vector<unsigned short,class std::allocator<unsigned short> > const &,bool)" (?UTF16ToUTF8@google_breakpad@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$vector@GV?$allocator@G@std@@@3@_N@Z)
+     1>E:\Opensource\Mozilla\Bug\5\Breakpad\breakpad\src\client\Default\minidump_file_writer_unittest.exe : fatal error LNK1120: 3 unresolved externals
+     1>Done Building Project "E:\Opensource\Mozilla\Bug\5\Breakpad\breakpad\src\client\minidump_file_writer_unittest.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:05.02
